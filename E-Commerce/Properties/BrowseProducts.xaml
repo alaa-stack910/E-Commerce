@@ -1,0 +1,44 @@
+﻿<Page x:Class="E_Commerce.Properties.BrowseProducts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_Commerce.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BrowseProducts">
+
+    <Grid>
+        <Grid.Background>
+
+            <ImageBrush ImageSource="/Properties/bd6d68f4aeaa8e77bfa2ddba80.jpg"/>
+        </Grid.Background>
+
+        <Border Background="White" Margin="156,46,156,34">
+            <StackPanel Margin="0,0,0,-126">
+                <Label Content=" Filter " FontWeight="Bold" FontSize ="35" Width="124"></Label>
+                <Label Content="Category" FontWeight="Bold" FontSize ="15" Width="437"/>
+                <ComboBox x:Name="cmcategory" Height="39" Width="246">
+                    <ComboBoxItem Content="Mobile"></ComboBoxItem>
+                    <ComboBoxItem Content="Audio"></ComboBoxItem>
+                    <ComboBoxItem Content="Audio67777"></ComboBoxItem>
+                    <ComboBoxItem Content="Accessories"></ComboBoxItem>
+                    <ComboBoxItem Content="Accessories67"></ComboBoxItem>
+
+                </ComboBox>
+                
+
+
+
+                <Label Content="Sort by :" FontWeight="Bold" FontSize ="15" Width="437"/>
+                <RadioButton x:Name="raPrice" Height="25" Width="328">Price</RadioButton>
+                <RadioButton x:Name="raQuantity" Height="41" Width="320">Quantity</RadioButton>
+
+                <Button FontSize="17" Margin="20" Click="filterclick" Content="Filter" Width="198" Height="32"/>
+
+            </StackPanel>
+
+        </Border>
+
+    </Grid>
+</Page>
